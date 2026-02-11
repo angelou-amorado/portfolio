@@ -1,0 +1,50 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #1f2933, #111827);
+    padding: 20px 60px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo h1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
