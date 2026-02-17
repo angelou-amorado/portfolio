@@ -1,27 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Angelou Amorado — Web Content Manager specializing in Enterprise CMS, AEM, Sitecore, Umbraco, and Digital Experience Optimization." />
+  <meta name="author" content="Angelou Amorado" />
+  <meta property="og:title" content="Angelou Amorado | Web Content Manager" />
+  <meta property="og:description" content="Enterprise CMS specialist with 4+ years across AEM, Sitecore, and Umbraco." />
+  <meta property="og:type" content="website" />
   <title>Angelou Amorado | Web Content Manager</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-        <div class="logo">
-            <h1>Amorado Content Studio</h1>
+
+  <!-- ACCESSIBILITY: Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =================== NAVIGATION =================== -->
+  <header class="header" role="banner">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#" class="logo-text" aria-label="Angelou Amorado – Home">
+        Angelou <span>Amorado</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- =================== HERO =================== -->
+  <main id="main-content">
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero-wrapper">
+
+        <div class="hero-content">
+          <p class="hero-eyebrow" aria-hidden="true">Available for opportunities</p>
+          <h1>
+            Angelou<br>
+            <em>Amorado</em>
+          </h1>
+          <p class="hero-sub">
+            Enterprise Web Content Manager specializing in scalable digital experiences across global CMS platforms — AEM, Sitecore &amp; Umbraco.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">
+              <!-- Email icon -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              Get in Touch
+            </a>
+            <a href="cv.pdf" class="btn-secondary" download>
+              <!-- Download icon -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
+          <div class="hero-social" aria-label="Social links">
+            <a href="mailto:angelouamorado@gmail.com" class="social-link" aria-label="Email Angelou">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/angelou-amorado-5694213a3/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile (opens in new tab)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
         </div>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Visual identity card -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="card-badge">Available</div>
+            <p class="card-name">Angelou Amorado</p>
+            <p class="card-title">Web Content Manager</p>
+            <div class="card-stats">
+              <div class="card-stat">
+                <span class="card-stat-num">4+</span>
+                <span class="card-stat-label">Years Exp.</span>
+              </div>
+              <div class="card-stat">
+                <span class="card-stat-num">3</span>
+                <span class="card-stat-label">CMS Platforms</span>
+              </div>
+              <div class="card-stat">
+                <span class="card-stat-num">1K+</span>
+                <span class="card-stat-label">Pages Migrated</span>
+              </div>
+              <div class="card-stat">
+                <span class="card-stat-num">✓</span>
+                <span class="card-stat-label">WCAG Ready</span>
+              </div>
+            </div>
+            <div class="card-cms-row">
+              <span class="cms-tag">AEM</span>
+              <span class="cms-tag">Sitecore</span>
+              <span class="cms-tag">Umbraco</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================== QUOTE BAND =================== -->
+    <div class="quote-band" role="complementary" aria-label="Inspirational quote">
+      <div class="container">
+        <blockquote>
+          "The eye sees only what the mind is prepared to comprehend."
+          <cite>— Henri Bergson</cite>
+        </blockquote>
+      </div>
     </div>
-</header>
+
+    <!-- =================== ABOUT =================== -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p class="section-label">Who I am</p>
+            <h2 class="section-title" id="about-heading">Crafting digital experiences at enterprise scale</h2>
+            <p>
+              Web Content Manager with 4+ years of hands-on experience managing enterprise and global digital platforms. My work spans the full content lifecycle — from authoring and publishing to governance, migration, and accessibility compliance.
+            </p>
+            <p>
+              I bridge the gap between technical teams and business stakeholders, translating Figma designs into production-ready pages while maintaining quality, consistency, and web standards across multi-region properties.
+            </p>
+          </div>
+
+          <aside class="about-aside" aria-label="Personal information">
+            <div class="info-block">
+              <p class="info-block-label">Location</p>
+              <p class="info-block-value">Cebu City, Philippines</p>
+            </div>
+            <div class="info-block">
+              <p class="info-block-label">Current Role</p>
+              <p class="info-block-value">Web Content Manager, MRM</p>
+            </div>
+            <div class="info-block">
+              <p class="info-block-label">Languages</p>
+              <p class="info-block-value">English · Tagalog</p>
+            </div>
+            <div class="info-block">
+              <p class="info-block-label">Specialties</p>
+              <p class="info-block-value">AEM · Sitecore · Umbraco · WCAG · SEO</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== EXPERIENCE =================== -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="exp-header reveal">
+          <p class="section-label">Career</p>
+          <h2 class="section-title" id="experience-heading">Professional Experience</h2>
+        </div>
+
+        <div class="timeline" role="list">
+
+          <article class="timeline-item reveal" role="listitem">
+            <div class="timeline-date">
+              <span class="tl-period">Sep 2025 – Present</span>
+              <span class="tl-company">MRM</span>
+            </div>
+            <div class="timeline-body">
+              <h3 class="tl-role">Web Content Manager</h3>
+              <ul class="tl-list" aria-label="Responsibilities at MRM">
+                <li>Lead content manager for enterprise website administration and digital governance.</li>
+                <li>Manage website content across Sitecore, AEM, and Umbraco CMS platforms.</li>
+                <li>Oversee digital asset management, taxonomy, and content quality assurance.</li>
+                <li>Execute cross-platform website updates and content rollouts at scale.</li>
+                <li>Optimize pages following SEO best practices and accessibility standards.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal" role="listitem">
+            <div class="timeline-date">
+              <span class="tl-period">Jun 2022 – Sep 2025</span>
+              <span class="tl-company">Accenture Inc.</span>
+            </div>
+            <div class="timeline-body">
+              <h3 class="tl-role">Content Development Associate</h3>
+              <ul class="tl-list" aria-label="Responsibilities at Accenture">
+                <li>Managed website content and administration using AEM and Sitecore.</li>
+                <li>Translated Figma designs into pixel-perfect, accessible functional web pages.</li>
+                <li>Led and participated in User Acceptance Testing (UAT) cycles.</li>
+                <li>Optimized pages for SEO, performance, and WCAG accessibility compliance.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== SKILLS =================== -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="skills-layout">
+          <div class="skills-intro reveal">
+            <p class="section-label">Expertise</p>
+            <h2 class="section-title" id="skills-heading">Technical Skills</h2>
+            <p class="section-desc">
+              A versatile toolkit built across enterprise-scale projects — from content strategy to hands-on implementation and compliance.
+            </p>
+          </div>
+
+          <div class="skills-grid reveal" role="list" aria-label="Technical skills">
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">🖥️</span>
+              <span class="skill-name">Enterprise CMS Management</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">✍️</span>
+              <span class="skill-name">Content Authoring &amp; Publishing</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">🔄</span>
+              <span class="skill-name">Content Migration &amp; Rollouts</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">🧩</span>
+              <span class="skill-name">Template &amp; Component Dev</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">🔍</span>
+              <span class="skill-name">SEO Best Practices</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">✅</span>
+              <span class="skill-name">User Acceptance Testing</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">💻</span>
+              <span class="skill-name">Web Technologies (HTML, CSS)</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">♿</span>
+              <span class="skill-name">Accessibility (WCAG)</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <span class="skill-icon" aria-hidden="true">🌐</span>
+              <span class="skill-name">Cross-Platform Updates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== IMPACT =================== -->
+    <section id="impact" aria-labelledby="impact-heading">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: 3rem;">
+          <p class="section-label">By the numbers</p>
+          <h2 class="section-title" id="impact-heading">Impact Snapshot</h2>
+        </div>
+
+        <div class="impact-grid reveal" role="list">
+          <article class="impact-card" role="listitem">
+            <p class="impact-num" aria-label="4 plus years">4+</p>
+            <p class="impact-label">Years of Enterprise CMS Experience</p>
+            <p class="impact-sub">Managing large-scale digital properties across global organizations.</p>
+          </article>
+          <article class="impact-card" role="listitem">
+            <p class="impact-num">3</p>
+            <p class="impact-label">CMS Platforms Mastered</p>
+            <p class="impact-sub">AEM, Sitecore &amp; Umbraco — from authoring to full administration.</p>
+          </article>
+          <article class="impact-card" role="listitem">
+            <p class="impact-num" aria-label="1000 plus">1K+</p>
+            <p class="impact-label">Pages Successfully Migrated</p>
+            <p class="impact-sub">Led Sitecore → AEM transition with zero content loss.</p>
+          </article>
+          <article class="impact-card" role="listitem">
+            <p class="impact-num">✓</p>
+            <p class="impact-label">WCAG Compliance Champion</p>
+            <p class="impact-sub">Implemented accessibility standards across global web properties.</p>
+          </article>
+          <article class="impact-card" role="listitem">
+            <p class="impact-num">🌏</p>
+            <p class="impact-label">Global Multi-Region Sites</p>
+            <p class="impact-sub">Managed international digital properties across multiple markets.</p>
+          </article>
+          <article class="impact-card" role="listitem">
+            <p class="impact-num">∞</p>
+            <p class="impact-label">Cross-Functional Collaboration</p>
+            <p class="impact-sub">Daily partnership with Dev, QA, Marketing &amp; Product stakeholders.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== EDUCATION =================== -->
+    <section id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: 3rem;">
+          <p class="section-label">Background</p>
+          <h2 class="section-title" id="education-heading">Education &amp; Certifications</h2>
+        </div>
+
+        <div class="edu-cert-grid reveal">
+
+          <div class="edu-block">
+            <h3>Education</h3>
+            <div class="edu-card">
+              <p class="edu-school">Cebu Technological University – Barili Campus</p>
+              <p class="edu-degree">BS Information and Communications Technology</p>
+              <p class="edu-period">June 2015 – May 2019</p>
+              <p class="edu-note">Major in Information and Communications Technology. Thesis: <em>"Electronic Travel Order System for Campus Employees."</em></p>
+            </div>
+          </div>
+
+          <div class="cert-block">
+            <h3>Certifications</h3>
+            <ul class="cert-list" aria-label="Professional certifications">
+              <li>
+                <span class="cert-icon" aria-hidden="true">🏆</span>
+                <div>
+                  <p class="cert-name">Build Website with HTML, JavaScript, AngularJS &amp; React</p>
+                  <p class="cert-issuer">Coursera · March 2025</p>
+                </div>
+              </li>
+              <li>
+                <span class="cert-icon" aria-hidden="true">🏆</span>
+                <div>
+                  <p class="cert-name">HTML and CSS in Depth</p>
+                  <p class="cert-issuer">Coursera · April 2025</p>
+                </div>
+              </li>
+              <li>
+                <span class="cert-icon" aria-hidden="true">🏆</span>
+                <div>
+                  <p class="cert-name">Programming with JavaScript</p>
+                  <p class="cert-issuer">Coursera · April 2025</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== PORTFOLIO =================== -->
+    <section id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <div class="portfolio-header reveal">
+          <div class="portfolio-intro">
+            <p class="section-label">Featured Work</p>
+            <h2 class="section-title" id="portfolio-heading">Project Case Studies</h2>
+            <p class="section-desc">A closer look at two enterprise-scale projects that shaped how I work — from complex CMS migrations to pixel-perfect front-end delivery.</p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+
+          <!-- PROJECT 1: Sitecore → AEM Migration -->
+          <article class="project-card theme-teal reveal" aria-labelledby="project1-title">
+
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-visual-bg"></div>
+              <div class="project-visual-pattern"></div>
+              <span class="project-visual-icon">🔄</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags" aria-label="Project categories">
+                <span class="project-tag">CMS Migration</span>
+                <span class="project-tag">AEM</span>
+                <span class="project-tag">Sitecore</span>
+              </div>
+
+              <h3 class="project-title" id="project1-title">Enterprise CMS Migration: Sitecore → Adobe Experience Manager</h3>
+              <p class="project-company">Accenture Inc. &nbsp;·&nbsp; 2022–2025</p>
+
+              <div class="case-section">
+                <p class="case-label">The Challenge</p>
+                <p class="case-text">Migrate 1,000+ pages of enterprise content from a legacy Sitecore CMS to Adobe Experience Manager (AEM) — without breaking existing URLs, losing content, or disrupting live digital properties across multiple regions.</p>
+              </div>
+
+              <div class="case-section">
+                <p class="case-label">My Role &amp; Approach</p>
+                <ul class="case-list" aria-label="Role and approach details">
+                  <li>Worked within a cross-functional team of 10 across content, dev, and QA over 12+ months.</li>
+                  <li>Managed content mapping and page-by-page migration into AEM's component architecture.</li>
+                  <li>Tackled the most complex challenge — URL redirect management — coordinating with developers to ensure zero broken links post-launch.</li>
+                  <li>Conducted thorough QA checks at every migration milestone to catch errors before go-live.</li>
+                </ul>
+              </div>
+
+              <div class="project-outcomes" aria-label="Project outcomes">
+                <span class="outcome-pill"><span class="dot" aria-hidden="true"></span>Go-live on schedule</span>
+                <span class="outcome-pill"><span class="dot" aria-hidden="true"></span>Fewer post-launch errors</span>
+                <span class="outcome-pill"><span class="dot" aria-hidden="true"></span>1,000+ pages migrated</span>
+                <span class="outcome-pill"><span class="dot" aria-hidden="true"></span>Team of 10</span>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- PROJECT 2: Figma to Web -->
+          <article class="project-card theme-ink reveal" aria-labelledby="project2-title">
+
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-visual-bg"></div>
+              <div class="project-visual-pattern"></div>
+              <span class="project-visual-icon">🎨</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags" aria-label="Project categories">
+                <span class="project-tag">Figma to Web</span>
+                <span class="project-tag">HTML &amp; CSS</span>
+                <span class="project-tag">UAT</span>
+              </div>
+
+              <h3 class="project-title" id="project2-title">Figma Design to Production Web Pages — Independently Delivered</h3>
+              <p class="project-company">Accenture Inc. &nbsp;·&nbsp; 2022–2025</p>
+
+              <div class="case-section">
+                <p class="case-label">The Challenge</p>
+                <p class="case-text">Translate pixel-perfect Figma UI designs into fully functional, accessible landing pages and careers pages — working independently, without supervision, while maintaining accuracy and quality standards.</p>
+              </div>
+
+              <div class="case-section">
+                <p class="case-label">My Role &amp; Approach</p>
+                <ul class="case-list" aria-label="Role and approach details">
+                  <li>Independently interpreted Figma designs and implemented them as production-ready web pages using HTML &amp; CSS with no supervision required.</li>
+                  <li>Delivered landing pages and careers pages that matched design specs at pixel level.</li>
+                  <li>Owned the full UAT cycle — writing test cases, identifying visual and functional issues, and flagging them to the dev team.</li>
+                  <li>Served as the go-to collaborator when cross-team page issues arose, proactively communicating and resolving blockers.</li>
+                </ul>
+              </div>
+
+              <div class="project-outcomes" aria-label="Project outcomes">
+                <span class="outcome-pill"><span class="dot" aria-hidden="true"></span>Autonomous delivery</span>
+                <span class="outcome-pill"><span class="dot" aria-hidden="true"></span>Full UAT ownership</span>
+                <span class="outcome-pill"><span class="dot" aria-hidden="true"></span>Landing &amp; careers pages</span>
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CONTACT =================== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="section-label reveal">Let's Connect</p>
+        <h2 class="section-title reveal" id="contact-heading">Open to New Opportunities</h2>
+        <p class="contact-sub reveal">
+          I'm always happy to discuss web content management projects, CMS strategy, or exciting new roles. Feel free to reach out!
+        </p>
+
+        <div class="contact-actions reveal">
+          <a href="mailto:angelouamorado@gmail.com" class="btn-light">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            angelouamorado@gmail.com
+          </a>
+          <a href="cv.pdf" class="btn-outline-light" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+
+        <div class="contact-info reveal" aria-label="Contact details">
+          <span class="contact-info-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Cebu City, Philippines
+          </span>
+          <span class="contact-info-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.65 4.37 2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +639811802346
+          </span>
+          <a href="https://www.linkedin.com/in/angelou-amorado-5694213a3/" target="_blank" rel="noopener noreferrer" class="contact-info-item" aria-label="LinkedIn profile (opens in new tab)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- end #main-content -->
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 Angelou Amorado. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- =================== JAVASCRIPT =================== -->
+
+  <script src="script.js" defer></script>
+
 </body>
 </html>
