@@ -986,8 +986,8 @@
 
     .btn-light:hover,
     .btn-light:focus {
-      background: #FFFFFF;
-      color: #fff;
+      background: #1D1D1D;
+      color: #FFFFFF;
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(29,29,29,0.2);
       outline: none;
